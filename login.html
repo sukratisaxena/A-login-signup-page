@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A Login Page</title>
+        <link rel="stylesheet" href="CSS.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    </head>
+    <body class="bg-dark">
+
+    <div class="container container-fluid vh-100">   
+    <div class="row justify-content-center container-fluid h-100" >  
+    <div class="card bg-light my-auto">       
+    <div class="card-header text-center bg-info h3" >
+        Login
+    </div>    
+    <div class="card-body mark">
+    <form id="login" name="login" method="POST" action="login.php" onsubmit="return validation()"> 
+        <div class="form-group">  
+        <label for="email">Email</label> <br>   
+        <input type="email" name="email" id="email" class="form-control" >    
+        </div>
+        <div class="form-group">   
+        <label for="password">Password</label><span id="forgotpwd" class="float-right"><a href="#">Forgot Password?</a></span>  
+        <br>     
+        <input type="Password" name="password" id="password"  class="form-control" >    
+        </div>
+        <div class="form-group"> 
+        <button type="submit" id="log_btn" class="btn-info container-fluid"><h3>Log In</h3></button>    
+        </div>   
+        <div class="form-group">  
+        <input type="checkbox" id="check">    
+        <label for="check">Remember me</label>    
+        <span id="Createacc" class="container-fluid">New user? <a href="Signup.html">Create an account.</a></span>
+        </div>
+    </form>  
+    </div>
+</div>    
+</div>
+</div>
+
+<script>
+    function validation()
+    {
+        var email=document.login.email.value;
+        var password=document.login.password.value;
+
+        if(email.length==""&&password.length==""){
+            alert("email and password empty");
+            return false;
+        }
+        else
+        {
+            if(email.length==""){
+                alert("email empty");
+                return false;
+            }
+            if(email.length==""){
+                alert("password empty");
+                return false;
+            }
+        }
+    }
+</script>
+</body>    
+</html>

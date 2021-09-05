@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A SigUp Page</title>
+        <link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="CSS.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    </head>
+    <body class="bg-dark">
+        
+    <div class="container container-fluid vh-100">   
+    <div class="row justify-content-center container-fluid h-100" >  
+    <div class="card bg-light my-auto">       
+    <div class="card-header text-center bg-info h3" >
+        SignUp
+    </div>    
+    <div class="card-body mark">
+    <form id="Signin" method="post" action="Signup.php"> 
+        <div class="form-group">   
+        <label for="email">Email</label> <br>   
+        <input type="email" name="email" id="email" class="form-control" required>    
+        </div>
+        <div class="form-group">   
+        <label for="phno">Phone number</label> <br>   
+        <input type="tel" name="phno" id="phno" class="form-control" required>    
+        </div>
+        <div class="form-group">   
+        <label for="name">Name</label> <br>   
+        <input type="text" name="name" id="name" class="form-control" required>    
+        </div>
+        <div class="form-group">   
+        <label for="password">Password </label>
+        <br>     
+        <input type="Password" name="password" id="password"  class="form-control" required>    
+        </div>
+        <div class="form-group">   
+        <label for="passconf">Password Confirmation</label>
+        <br>     
+        <input type="Password" name="passconf" id="passconf"  class="form-control" required>    
+        </div>
+        <div class="form-group"> 
+        <button id="signin_btn" class="btn-info container-fluid"><h3>Sign Up</h3></button>    
+        </div>   
+        <div class="form-group container-fluid text-center container">  
+        &emsp;&emsp;&emsp;&emsp;Already a user? <a href="Login.html">Log in.</a></span>&emsp;&emsp;&emsp;&emsp;
+        </div>
+    </form>  
+    </div>
+</div>    
+</div>
+</div>
+</body>    
+</html>
